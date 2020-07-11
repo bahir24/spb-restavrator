@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+.vscode
+.idea
+dist
+*.log
+packages_to_reinstall.txt
