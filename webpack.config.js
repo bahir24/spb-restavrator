@@ -9,10 +9,10 @@ const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = (env, argv) => {
   const isProductionBuild = argv.mode === "production";
-  const publicPath = '/';
+  const publicPath = '';
 
   const pcss = {
-    test: /\.[ps]?css$/,
+    test: /\.(p|post|)css$/,
     use: [
       isProductionBuild ? MiniCssExtractPlugin.loader : "vue-style-loader",
       "css-loader",

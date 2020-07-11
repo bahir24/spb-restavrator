@@ -1,6 +1,9 @@
 html,
 body {
     font-family: 'Ubuntu';
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 .menu_link {
@@ -12,6 +15,13 @@ body {
 
 .hero {
     height: 100vh;
+}
+
+section{
+    height: 100vh;
+}
+section:first-child{
+    padding-top: 0;
 }
 
 nav {
@@ -32,8 +42,19 @@ nav {
     object-fit: cover;
 }
 
-.section-contacts {
-    height: 50vh;
+.section-head{
+    height: 10vh;
+}
+
+.section__content{
+    height: 90vh;
+}
+
+.tab-pane{
+    height: 90vh;
+}
+
+.new-works {
 }
 
 .card-img-top {
@@ -41,6 +62,27 @@ nav {
 }
 
 .restauration {
-    height: 60vh;
     overflow: hidden;
+}
+
+.footer{
+    // height: 35vh;
+}
+
+.footer__list .nav-item{
+    .centered {
+        text-align: center;
+    }
+
+}
+
+.footer__list .menu_link {
+    font-size: 18px;
+}
+
+.contacts__icon{
+    width: 20px;
+    height: 20px;
+    flex: 1;
+    text-align: center;
 }
