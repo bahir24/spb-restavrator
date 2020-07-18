@@ -1,43 +1,46 @@
-section.new-works
+section.new-works(name="page3")
   .container
-    h1 Производство
-    #accordionExample.accordion
+    h1.section__head Производство
+    #accordionExample.accordion.manufacture__accordion
       .card
-        #headingOne.card-header
-            button.btn.btn-outline-primary(type='button', data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
-              | Collapsible Group Item #1
-        #collapseOne.collapse.show(aria-labelledby='headingOne', data-parent='#accordionExample')
-          .card-body
-            | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-            | squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-            | nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-            | single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-            | beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-            | lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-            | probably haven&apos;t heard of them accusamus labore sustainable VHS.
+        #headingOne.card-header.manufacture__accordion-header
+            button.btn.works__button.p-3(type='button', data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+              | Столярная мастерская
+        #collapseOne.collapse.manufacture__collapse.show(aria-labelledby='headingOne', data-parent='#accordionExample')
+          .row.no-gutters.manufacture__card
+            .col-md-4
+              +image('content/woodwork.jpg', 'card-img manufacture__image')
+            .col-md-8
+              .card-body.manufacture__description
+                h5.card-title Изделия из дерева
+                p.card-text Мы умеем работать со всеми породами древесины
+                p.card-text
+                  small.text-muted Сосна, бук, красное дерево, береза, дуб
       .card
-        #headingTwo.card-header
-            button.btn.btn-outline-primary.collapsed(type='button', data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
-              | Collapsible Group Item #2
-        #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordionExample')
-          .card-body
-            | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-            | squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-            | nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-            | single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-            | beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-            | lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-            | probably haven&apos;t heard of them accusamus labore sustainable VHS.
+        #headingTwo.card-header.manufacture__accordion-header
+            button.btn.works__button.p-3(type='button', data-toggle='collapse', data-target='#collapseTwo', aria-expanded='true', aria-controls='collapseTwo')
+              | Натуральный и искуственный камень
+        #collapseTwo.collapse.manufacture__collapse(aria-labelledby='headingTwo', data-parent='#accordionExample')
+          .row.no-gutters.manufacture__card
+            .col-md-4
+              +image('content/countertop.jpg', 'card-img manufacture__image')
+            .col-md-8
+              .card-body.manufacture__description
+                h5.card-title Изделия из камня
+                p.card-text Мы разбираемся в камне
+                p.card-text
+                  small.text-muted Мрамор, песчаник
       .card
-        #headingThree.card-header
-            button.btn.btn-outline-primary.collapsed(type='button', data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
-              | Collapsible Group Item #3
-        #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordionExample')
-          .card-body
-            | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-            | squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-            | nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-            | single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-            | beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-            | lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-            | probably haven&apos;t heard of them accusamus labore sustainable VHS.
+        #headingThree.card-header.manufacture__accordion-header
+            button.btn.works__button.p-3(type='button', data-toggle='collapse', data-target='#collapseThree', aria-expanded='true', aria-controls='collapseThree')
+              | Изготовление памятников
+        #collapseThree.collapse.manufacture__collapse(aria-labelledby='headingOne', data-parent='#accordionExample')
+          .row.no-gutters.manufacture__card
+            .col-md-4
+              +image('content/gravestone.jpg', 'card-img manufacture__image')
+            .col-md-8
+              .card-body.manufacture__description
+                h5.card-title Делаем памятники
+                p.card-text Наши художники нарисуют любой памятник
+                p.card-text
+                  small.text-muted Мрамор, 2-d, 3-d

@@ -8,10 +8,12 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Portfolio | main page
   body
-    .wrapper
-      section.hero
+    .wrapper(id="fullPage")
+      section.hero(name="page1")
         include sections/header.pug
         include sections/carousel.pug
       include sections/restoration.pug
       include sections/new-works.pug
-      include sections/footer.pug
+      section.about(name="page4")
+        include sections/desc.pug
+        include sections/footer.pug
